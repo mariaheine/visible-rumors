@@ -1,0 +1,2 @@
+
+The contents of this directory, *all the code inside* was taken from a fantastic repo `UnityWasapiAudio` created by `hallidev` which you can find [by this link](https://github.com/hallidev/UnityWasapiAudio).

@@ -1,0 +1,29 @@
+{
+    "name": "aureliaeris.visiblerumors",
+    "version": "0.1.0",
+    "displayName": "visible-rumors",
+    "description": "🌠 Audio-visualization package for Unity3D",
+    "samples": [
+      {
+        "displayName": "Basic Effects",
+        "description": "...",
+        "path": "Samples~/BasicEffects"
+      },
+      {
+        "displayName": "Sample Scenes",
+        "description": "...",
+        "path": "Samples~/SampleScenes"
+      }
+    ],
+    "dependencies": 
+    {
+      "com.unity.postprocessing": "3.0.3"
+    },
+    "keywords": [
+      "wow"
+    ],
+    "author": {
+      "name": "aurelia eris",
+      "url": "https://www.spacejam.com/"
+    }
+  }
