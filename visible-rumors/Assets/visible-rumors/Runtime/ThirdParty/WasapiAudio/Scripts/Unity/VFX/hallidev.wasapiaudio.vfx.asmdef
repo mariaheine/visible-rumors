@@ -1,0 +1,18 @@
+{
+    "name": "hallidev.wasapiaudio.vfx",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d04eb9c554ad44ceab303cecf0c0cf82",
+        "GUID:7fa855cde01e9664594351445ce54018",
+        "GUID:73106583b323919458c1e05166706ce3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
