@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace VisibleRumors.Effects
 {
-    public class SpectrumCircleEffect : BaseAudioEffect
+    public class SpectrumCircleEffect : IAudioEffect
     {
         [SerializeField] GameObject _cubePrefab;
         [SerializeField] float _maxScale;
@@ -12,9 +12,9 @@ namespace VisibleRumors.Effects
         GameObject[] _cubes;
         int _spectrumLength;
 
-        protected override void OnEffectInitialize()
+        public override void OnEffectInitialize()
         {
-            _spectrumLength = SpectrumData.Length;
+            _spectrumLength = _audioData.SpectrumData.Length;
             _cubes = new GameObject[_spectrumLength];
             float rot = 360f / _spectrumLength;
 
@@ -28,11 +28,11 @@ namespace VisibleRumors.Effects
             }
         }
 
-        protected override void OnEffectUpkeepTick()
+        public override void OnEffectUpkeepTick()
         {
             for(int i = 0; i < 512; i++)
             {
-                _cubes[i].transform.localScale = new Vector3(1, SpectrumData[i] * _maxScale, 1);
+                _cubes[i].transform.localScale = new Vector3(1, _audioData.SpectrumData[i] * _maxScale, 1);
             }
         }
     }

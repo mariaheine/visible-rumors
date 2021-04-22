@@ -4,19 +4,19 @@ using UnityEngine;
 
 namespace VisibleRumors.Effects
 {
-    public class CameraFlagsSwitchEffect : BaseAudioEffect
+    public class CameraFlagsSwitchEffect : IAudioEffect
     {
         [Space, Header("Camera Flag Switch")]
         [SerializeField] Camera targetCamera;
         [SerializeField] CameraClearFlags activeFlags;
         [SerializeField] CameraClearFlags disabledFlags;
 
-        protected override void OnEffectActivate()
+        public override void OnEffectActivate()
         {
             targetCamera.clearFlags = activeFlags;
         }
 
-        protected override void OnEffectDeactivate()
+        public override void OnEffectDeactivate()
         {
             targetCamera.clearFlags = disabledFlags;
         }
