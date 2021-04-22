@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace VisibleRumors.Effects
 {
-    public class OffsetObjectEffect : BaseAudioEffect
+    public class OffsetObjectEffect : IAudioEffect
     {
         // TODO
         // Could add chainable randomize offset value effect inbetween
@@ -13,7 +13,7 @@ namespace VisibleRumors.Effects
         [SerializeField] List<Transform> targets;
         [SerializeField] Vector3 offset;
 
-        protected override void OnEffectActivate()
+        public override void OnEffectActivate()
         {
             for (int i = 0; i < targets.Count; i++)
             {
@@ -21,7 +21,7 @@ namespace VisibleRumors.Effects
             }
         }
 
-        protected override void OnEffectDeactivate()
+        public override void OnEffectDeactivate()
         {
             for (int i = 0; i < targets.Count; i++)
             {

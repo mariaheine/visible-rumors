@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace VisibleRumors.Effects
 {
-    public class MaterialOffsetEffect : BaseAudioEffect
+    public class MaterialOffsetEffect : IAudioEffect
     {
         // TODO
         // Split into two effects, one for regular material, one for terrain material
@@ -33,20 +33,20 @@ namespace VisibleRumors.Effects
             ResetMaterials();
         }
 
-        protected override void OnEffectActivate()
+        public override void OnEffectActivate()
         {
             currentOffset = 0f;
         }
 
-        protected override void OnEffectDeactivate()
+        public override void OnEffectDeactivate()
         {
             ResetMaterials();
             currentOffset = 0f;
         }
 
-        protected override void OnEffectUpkeepTick()
+        public override void OnEffectUpkeepTick()
         {
-            float modifier = Mathf.Pow(RangedAmplitude, 2f);
+            float modifier = Mathf.Pow(_audioData.AmplitudeRanged, 2f);
 
             float offsetSpeed = modifier * maxSpeedBoost * boostStrength;
 
