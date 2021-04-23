@@ -1,12 +1,10 @@
 {
-    "name": "aureliaeris.visiblerumors.Editor",
+    "name": "aureliaeris.visiblerumors.basiceffects",
     "rootNamespace": "",
     "references": [
         "GUID:71a4e834843b0894591918a599e1687f"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

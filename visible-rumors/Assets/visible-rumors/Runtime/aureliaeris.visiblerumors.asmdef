@@ -1,7 +1,9 @@
 {
-    "name": "maraimarai.powderbox",
+    "name": "aureliaeris.visiblerumors",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:7fa855cde01e9664594351445ce54018"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
