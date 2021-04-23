@@ -1,9 +1,8 @@
 {
-    "name": "aureliaeris.visiblerumors.adapters",
+    "name": "aureliaeris.visiblerumors.samplescenes",
     "rootNamespace": "",
     "references": [
-        "GUID:7fa855cde01e9664594351445ce54018",
-        "GUID:f13f28cf8b0838646aab88a08eaed9d9"
+        "aureliaeris.visiblerumors"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

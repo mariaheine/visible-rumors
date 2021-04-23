@@ -2,8 +2,7 @@
     "name": "hallidev.wasapiaudio",
     "rootNamespace": "",
     "references": [
-        "GUID:73106583b323919458c1e05166706ce3",
-        "GUID:71a4e834843b0894591918a599e1687f"
+        "GUID:73106583b323919458c1e05166706ce3"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
